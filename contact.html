@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant-contact</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/home/favicon.ico">
+        <!-- Bootstrap link 4.6 -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <!-- normalize -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- blog css -->
+        <link rel="stylesheet" href="./css/blog.css">
+        <!-- Main link css -->
+        <link rel="stylesheet" href="./css/index.css">
+        <!-- Font Awsome link -->
+        <link rel="stylesheet" href="./css/all.min.css">
+        <style>
+            .contact{
+                padding: 100px 0;
+            }
+            .contact h4{
+                font-size: 27px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            .contact textarea{
+                height: 100% !important;
+            }
+            .contact .form-control{
+                border: 1px solid #e5e6e9;
+                border-radius: 0px;
+                height: 48px;
+                padding-left: 18px;
+                font-size: 13px;
+                background: transparent;
+            }
+            .form-group{
+                margin-bottom: 30px;
+            }
+            .form-btn{
+                background: #fff;
+                color: #ff5600 !important;
+                display: inline-block;
+                padding: 18px 44px;
+                font-family: "Josefin Sans",sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                border: 0;
+                border: 1px solid #ff5600;
+                letter-spacing: 3px;
+                text-align: center;
+                color: #ff5600;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+            .form-btn:hover{
+                background: #ff5600;
+                color: #fff !important;
+                border: 1px solid #ff5600;
+            }
+            .media{
+                display: flex;
+                align-items: flex-start;
+                margin-top: 15px;
+            }
+            .media i{
+                color: #8f9195;
+                font-size: 27px;
+                margin-right: 20px;
+            }
+            .media .info h3{
+                font-size: 16px;
+                margin-bottom: 0;
+                font-size: 16px !important;
+                color: #2a2a2a !important;
+            }
+            .media .info p{
+                font-family: "Poppins",sans-serif;
+                color: #8a8a8a;
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 15px;
+                font-weight: normal;
+            }
+            @media (max-width: 576px){
+                .container{
+                    padding: 0 40px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/home/logo.png" class="img-fluid w-100" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">contact</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <button class="btn top-btn my-2" type="submit">order online</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+        <!-- start bolg-bg-header -->
+        <section class="blog-bg-header">
+            <h1 class="fitText">Contact Us</h1>
+        </section>
+        <!-- end blog-bg-header -->
+        <!-- start contact -->
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12"><h4>Get in Touch</h4></div>
+                    <div class="col-lg-8">
+                        <form action="" class="py-3">
+                            <div class="row mx-auto">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" placeholder=" Enter Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group pr-sm-3">
+                                        <input class="form-control valid" name="name" id="name" type="text" placeholder="Enter your name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group pl-sm-3 ">
+                                        <input class="form-control valid" name="email" id="email" type="email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <input class="form-control" name="subject" id="subject" type="text" placeholder="Enter Subject">
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <button type="submit" class="button button-contactForm form-btn">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="media mb-4">
+                            <i class="fas fa-home-alt"></i>
+                            <div class="info">
+                                <h3>Buttonwood, California.</h3>
+                                <p>Rosemead, CA 91770</p>
+                            </div>
+                        </div>
+                        <div class="media mb-4">
+                            <i class="fas fa-phone-square"></i>
+                            <div class="info">
+                                <h3>+1 253 565 2365</h3>
+                                <p>Mon to Fri 9am to 6pm</p>
+                            </div>
+                        </div>
+                        <div class="media mb-4">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <h3>support@colorlib.com</h3>
+                                <p>Send us your query anytime!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- start footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row top-footer d-flex justify-content-between">
+                    <div class="col-lg-4 col-md-5 col-sm-8">
+                        <div class="logo">
+                            <a href="index.html"><img src="./images/home/logo2_footer.png" class=" img-fluid" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-5 col-sm-6">
+                        <div class="single-caption">
+                            <h5>Navigation</h5>
+                            <ul class="nav d-flex list-unstyled">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="menu.html">Menu</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-5 col-sm-6">
+                        <div class="single-caption">
+                            <h5>Useful Links</h5>
+                            <ul class="nav-2 d-flex list-unstyled">
+                                <li><a href="#">Registration</a></li>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-7">
+                        <div class="single-caption">
+                            <h5>Instagram Feed</h5>
+                            <div class="img-gallery">
+                                <ul class="insta-img list-unstyled"> 
+                                    <li><img src="./images/Instagram Feed/instagram1.png" class="w-100 img-fluid" alt=""></li>
+                                    <li><img src="./images/Instagram Feed/instagram2.png" class="w-100 img-fluid" alt=""></li>
+                                    <li><img src="./images/Instagram Feed/instagram3.png" class="w-100 img-fluid" alt=""></li>
+                                    <li><img src="./images/Instagram Feed/instagram4.png" class="w-100 img-fluid" alt=""></li>
+                                    <li><img src="./images/Instagram Feed/instagram5.png" class="w-100 img-fluid" alt=""></li>
+                                    <li><img src="./images/Instagram Feed/instagram6.png" class="w-100 img-fluid" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="footer-icon">
+                                <span>Follow Us</span>
+                                <a href="https://twitter.com/fatma_abead" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/FatmaMhadi96" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.linkedin.com/in/fatma-abu-mhadi/" target="_blank"> <i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/fatma_abead/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+            <!-- js -->
+            <script src="js/jquery.min.js"></script>
+            <script src="./js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.fittext.js"></script>
+            <script src="js/main.js"></script>
+    </body>
+</html>
